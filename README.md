@@ -1,4 +1,4 @@
-# Using Natural Language Model to improve Classification task.
+# Using Natural Language Model to improve Classification task on DBpedia datasets.
 This repository has the code and results from my experiments with Ridle in combination with Natural Language Models.
 All the experiments were performed under the supervision of Prof. Dr. Maribel Acosta Deibe
 
