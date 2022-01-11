@@ -16,3 +16,15 @@ Ridle achieved very good scores compared to other SOTA models, such as RDF2Vec, 
 To use and improve the experiments performed on Ridle, we used the same datasets that were provided with Ridle. (see dataset folder) For the extraction of the data, the WikipediaAPI was used, which extracts either the summary, that is the first paragraph on a wikipedia article, or the content of the whole wikipedia page. To further improve the quality of the data, we ran a data cleaning program, which got rid of unnecessary information and text which wasn't written in English. The data was merged into a file with the format (Subject - Summary - Class).
 ![image](https://user-images.githubusercontent.com/81161341/148771055-83ee2563-e941-49d7-950b-89f838b2f743.png)
 
+# Experiments :wrench:
+All the experiments were performed in jupyter notebook, with the same Sequential model, Ridle was using for its classification.
+The first experiments were mainly about finding a useful way to combine the information from the representations that Ridle learned, with the information from the entities' wikipedia article. To usefully merge the two, we were thinking about concatenating the representation vector with a vector from a Language Model.
+
+When it comes to Language Models, BERT is the current SOTA in many different tasks, because the Encoder Decoder model has the possibility to learn word representations simultaneously, so it is fast, and the context is better learned, since the model can learn the left to right and right to left context simultaneously 🡪 Deeply Bidirectional.
+Another important factor is that you can use already trained models for your tasks, which is very useful if you don't have a good CPU/GPU that can process large amount of data.
+
+For Ridle to work properly, we concatenated the entity representations with, sentence embeddings, created by sentenceBERT and ran the program on the default neural network settings with 1 hiddenlayer and GeLu as the activation function for the hidden layer.
+
+We also experimented with different neural network structures to see, how the model performs with a different activation function such as ReLU or more hidden layers.
+Finally the best settings were chosen and added together for a final run to see, if and how a Language Model can enhance a classification task.
+# Evaluation :bar_chart:
