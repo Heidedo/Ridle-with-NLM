@@ -31,6 +31,9 @@ Finally the best settings were chosen and added together for a final run to see,
 Our results have shown, that combining linguistic features with an embedding approach can
 enhance the performance of entity type prediction on knowledge graphs.
 
+![image](https://user-images.githubusercontent.com/81161341/160786163-3392f6d2-9621-43ac-ade0-de807fdb1ad9.png)
+
+
 On average, the extension of knowledge graph embeddings with language models has a
 positive impact on entity type prediction. Many entities share the same relations, even if they
 belong to different classes. Therefore the distinction between entities is more difficult if we
@@ -40,6 +43,9 @@ Additionally, we tried a second language model to see how the performance change
 a sentence encoder with different parameters. Even though the sentence embeddings created
 by the new sentence encoder achieved better scores than the SBERT embeddings, the concatenation with representation embeddings led to slightly worse F1-scores among most of the
 datasets.
+
+![image](https://user-images.githubusercontent.com/81161341/160786249-ef8e9184-9371-4dd9-a433-1baea07b7001.png)
+
 
 Finally, we experimented with a different SBERT model. Analyzing the default model
 and the enhanced model, the main differences were in the embedding size and the maximum
