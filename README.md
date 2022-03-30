@@ -28,3 +28,24 @@ For Ridle to work properly, we concatenated the entity representations with, sen
 We also experimented with different neural network structures to see, how the model performs with a different activation function such as ReLU or more hidden layers.
 Finally the best settings were chosen and added together for a final run to see, if and how a Language Model can enhance a classification task.
 # Evaluation :bar_chart:
+Our results have shown, that combining linguistic features with an embedding approach can
+enhance the performance of entity type prediction on knowledge graphs.
+On average, the extension of knowledge graph embeddings with language models has a
+positive impact on entity type prediction. Many entities share the same relations, even if they
+belong to different classes. Therefore the distinction between entities is more difficult if we
+use a statistical approach. By adding semantic information, in the form of abstract summaries
+transformed into embeddings, the model can make more accurate predictions on entity types.
+Additionally, we tried a second language model to see how the performance changes, using
+a sentence encoder with different parameters. Even though the sentence embeddings created
+by the new sentence encoder achieved better scores than the SBERT embeddings, the concatenation with representation embeddings led to slightly worse F1-scores among most of the
+datasets.
+Finally, we experimented with a different SBERT model. Analyzing the default model
+and the enhanced model, the main differences were in the embedding size and the maximum
+sequence length processed by the model. We have seen that the second model outperformed
+the default model for most knowledge graphs tested. This might be because more significant
+embeddings can encapsulate more detailed text representation, making it easier for the model
+to predict instance types.
+We have seen the difficulties of training and testing a classifier on incomplete knowledge
+graphs. On the one hand, training on incomplete or false knowledge graphs also leads to false
+classifications. Besides that, actual positively classified entities are marked as misclassified
+due to missing information for some entities.
