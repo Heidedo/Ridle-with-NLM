@@ -61,7 +61,7 @@ the default model for most knowledge graphs tested. This might be because more s
 embeddings can encapsulate more detailed text representation, making it easier for the model
 to predict instance types.
 
-We have seen the difficulties of training and testing a classifier on incomplete knowledge
+We have also seen difficulties of training and testing a classifier on incomplete knowledge
 graphs. On the one hand, training on incomplete or false knowledge graphs also leads to false
 classifications. Besides that, actual positively classified entities are marked as misclassified
 due to missing information for some entities.
