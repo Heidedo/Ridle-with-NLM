@@ -56,7 +56,7 @@ datasets.
 
 Finally, we experimented with a different SBERT model. Analyzing the default model
 and the enhanced model, the main differences were in the embedding size and the maximum
-sequence length processed by the model. We have seen that the second model outperformed
+sequence length processed by the model. The second model outperformed
 the default model for most knowledge graphs tested. This might be because more significant
 embeddings can encapsulate more detailed text representation, making it easier for the model
 to predict instance types.
