@@ -1,3 +1,10 @@
+# Executing the Code
+1. After downloading the datasets, run Data_cleaning and specify the Dataset, to extract the summaries and create the panda file (see example below)
+2. Run learn_representation file, this will create the representation embeddings from Ridle
+3. Depending on the model tested, run Testing_(SBERT, USE...)
+4. For further information on how to specify datasets and code descriptions, check the jupyter notebooks.
+5. The conda versions used to run the code are in a seperate .txt file in the GitHub
+
 # Using Natural Language Model to improve Classification task on DBpedia datasets.
 This repository has the code and results from my experiments with Ridle in combination with Natural Language Models.
 All the experiments were performed under the supervision of Prof. Dr. Maribel Acosta Deibe
